@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+message Customer {
+    string name = 1;
+    repeated Transaction transactions = 2;
+}
+
+message Transaction {
+    double amount = 1;
+    int64 timestamp = 2;
+}
